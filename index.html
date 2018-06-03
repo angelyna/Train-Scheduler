@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Train Schedule</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
+    <!-- myStyleFile Reference -->
+    <link rel='stylesheet' href='style.css'>
+    <!-- jQuery Reference -->
+    <script src='https://code.jquery.com/jquery.js'></script>
+    <!-- moment.js Reference -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- my Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+
+<body>
+        <div class = "fluid-container">
+
+                <!-- SlideShow-->
+                    <div id="trainSlideshow" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="d-block w-100" id="date-time" alt="Time">
+                            </div>
+                            </div>
+                          <div class="carousel-item">
+                            <div class="d-block w-100" id="quote" alt="Quote">
+                           </div>
+                          </div>
+                      </div>
+                    </div>
+
+    <br><br>
+   <!-- Current Trains-->
+   
+   <div class="table-responsive">
+        <table class="table">
+            <h2 class='center-align'>Current Train Schedule</h2>
+            <table class="table table-striped" id="train-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (minutes)</th>
+                    <th scope="col">New arrival</th>
+                    <th scope="col">Minutes away</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+        </table>
+      </div>
+
+       <!-- Form with Submit Button -->
+      <form class="border border-secondary">
+            <label for="Add Train">Add Train Form</label>
+            <div class="form-group">
+                <small class="form-text text-muted">Train Name</small>
+                <input type="text" class="form-control" id="tName-input"></input>
+            </div>
+            <div class="form-group">
+                 <small class="form-text text-muted">Destination</small>
+                 <input type="text" class="form-control" id="tDestination-input">
+              </div>
+              <div class="form-group">
+                  <small class="active">First Train Time (Military Time - ex. 11:11 AM)</small>
+                  <input type="time" class="form-control" id="firstTrain-input">
+               </div>
+               <div class="form-group">
+                    <small class="form-text text-muted">Frequency (minutes)</small>
+                    <input type="number" class="form-control" id="tFrequency-input">
+                  </div>
+              
+         <button type="submit" class="btn btn-primary" id="add-train-btn">Submit</button>
+        </form>
+    </div>   
+            <!-- </div>
+        </div>
+    </div> -->
+    <script type="text/javascript" src="trainSchedule.js"></script>
+
+</body>
+
+</html>

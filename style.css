@@ -1,0 +1,47 @@
+.fluid-container{
+    margin: 10%;
+    margin-top:2%;
+}
+
+label {
+    font-size: 5vh;
+    margin-left:35%;
+    color: darkgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: -1%;
+}
+
+h2{
+    margin-top: 5vh;
+}
+.form-group{
+    margin-left: 5%;
+    margin-right:5%;
+}
+
+.btn {
+    margin-left: 5%;
+    margin-bottom: 2%;
+    color: silver;
+    font-size: 3vh;
+}
+
+.d-block {
+    background: url("trainBanner.jpg") no-repeat center top fixed;
+    height: 17vh;
+}
+
+#date-time{
+    font-size: 4vh;
+    padding-top: 3%;
+    display: inline-flex;
+    text-align: center;
+    color: white;
+}
+
+#quote{
+    font-size: 3vh;
+    padding-top: 3%;
+    color: white;
+    text-align: center;
+}
